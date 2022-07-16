@@ -1,154 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!--importação css-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <!--importação css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detalhes do Cliente</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
-    <style>
-     
-     .button{
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalhes do Cliente</title>
+
+  <style>
+    .button {
       text-align: end;
-     }
-    </style>
-  </head>
-  <body class="bg-black">
-    <!-- As a link -->
-    <nav class="navbar bg-dark">
-      <div class="container-fluid">
-        <p class="navbar-brand text-light">Detalhes do Cliente</p>
-      </div>
-    </nav>
+    }
+  </style>
+</head>
 
-    <div class="container row m-auto">
-      <div class="my-3">
-        <form action="" method="get ">
-          <label for="form-label" class="text-light">Cliente Principal</label>
-          <select
-            name="cliente"
-            id="cliente"
-            class="form-select bg-dark text-light p-1"
-          >
-            <option value="1">Cassems</option>
-            <option value="2">Clinica Dom</option>
-          </select>
-      </div>
+<body class="bg-black">
+  <!-- As a link -->
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <p class="navbar-brand text-light">Detalhes do Cliente</p>
+    </div>
+  </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <label for="form-label" class="text-light">Situação</label>
-            <select
-            name="situacao"
-            id="situacao"
-            class="form-select bg-dark text-light "
-          >
+  <div class="container row m-auto">
+    <div class="my-3">
+      <form action="" method="get ">
+        <label for="form-label" class="text-light">Cliente Principal</label>
+        <select name="cliente" id="cliente" class="form-select bg-dark text-light p-1 text-light">
+          <option value="1">Cassems</option>
+          <option value="2">Clinica Dom</option>
+        </select>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <label for="form-label" class="text-light">Situação</label>
+          <select name="situacao" id="situacao" class="form-select bg-dark text-light ">
             <option value="1">Ativo</option>
             <option value="2">Inativo</option>
           </select>
-  
-          </div>
-          <div class="col">
-            <label for="form-label" class="text-light">Razão Social</label>
-        <input
-          type="text"
-          class="form-control bg-dark  text-light"
-          id="razao-social"
-          placeholder="razao social"
-        />
-          </div>
-          
-          <div class="my-3 col-8" >
-            <label for="form-label" class="text-light">Nome Fantasia</label>
-            <input
-              type="text"
-              class="form-control bg-dark"
-              id="nome-fantasia"
-              placeholder="nome fantasia"
-            />
-          </div>
 
-          
+        </div>
+        <div class="col">
+          <label for="form-label" class="text-light">Razão Social</label>
+          <input type="text" name="" class="form-control bg-dark  text-light" id="razao-social"
+            placeholder="razao social" />
+        </div>
+
+        <div class="my-3 col-8">
+          <label for="form-label" class="text-light ">Nome Fantasia</label>
+          <input type="text" class="form-control bg-dark text-light" id="nome-fantasia" placeholder="nome fantasia" />
+        </div>
+
+
         <div class="my-3 col">
           <label for="form-label" class="text-light">CPF/CNPJ</label>
-          <input
-            type="text"
-            class="form-control bg-dark"
-            id="cpf-cnpj"
-            placeholder="cpf/cnpj"
-          />
+          <input type="text" class="form-control bg-dark text-light" id="cpf-cnpj" placeholder="cpf/cnpj" />
         </div>
         <div class="my-3 col-8 ">
           <label for="form-label" class="text-light">Endereço</label>
-          <input
-            type="text"
-            class="form-control bg-dark"
-            id="endereco"
-            placeholder="endereco"
-          />
+          <input type="text" name="endereco" class="form-control bg-dark text-light" id="endereco" placeholder="endereco" />
 
-        
+
         </div>
-        <div class="my-3 col" >
+        <div class="my-3 col">
           <label for="form-label" class="text-light">Numero</label>
-          <input
-            type="text"
-            class="form-control bg-dark"
-            id="numero"
-            placeholder="numero"
-          />
+          <input type="text" name="numero" class="form-control bg-dark text-light" id="numero" placeholder="numero" />
         </div>
-        
+
         <div class="my-3 col">
           <label for="form-label" class="text-light">CEP</label>
-        <input
-          type="text"
-          class="form-control bg-dark"
-          id="cep"
-          placeholder="cep"
-        />
+          <input type="text" name="cep" class="form-control bg-dark text-light" id="cep" placeholder="cep" />
         </div>
         <div class="my-3 col-6">
           <label for="form-label" class="text-light">Bairro</label>
-          <input
-            type="text"
-            class="form-control bg-dark"
-            id="bairro"
-            placeholder="bairro"
-          />
-        </div>
-        
-        <div class="my-3 col-2" >
-          <label for="form-label" class="text-light">Cidade</label>
-          <input
-            type="text"
-            class="form-control bg-dark text-light"
-            id="cidade"
-            placeholder="cidade"
-          />
+          <input type="text" name="bairro" class="form-control bg-dark text-light" id="bairro" placeholder="bairro" />
         </div>
 
         <div class="my-3 col-2">
-          <label for="form-label" class="text-light">Estado</label>
-          <select
-            name="situacao"
-            id="situacao"
-            class="form-select bg-dark text-light p-1"
-          >
+          <label for="form-label" class="text-light">Cidade</label>
+          <input type="text" name="cidade" class="form-control bg-dark text-light" id="cidade" placeholder="cidade" />
+        </div>
+
+        <div class="my-3 col-2">
+          <label for="form-label"  class="text-light">Estado</label>
+          <select name="estado" id="estado" class="form-select bg-dark text-light p-1">
             <option value="1">MS</option>
             <option value="2">PR</option>
             <option value="3">MG</option>
@@ -157,80 +101,59 @@
 
         <div class="my-3 col-2">
           <label for="form-label" class="text-light">País</label>
-          <select
-            name="situacao"
-            id="situacao"
-            class="form-select bg-dark text-light p-1"
-          >
+          <select name="pais" id="pais" class="form-select bg-dark text-light p-1">
             <option value="1">Brasil</option>
             <option value="2">Argentina</option>
             <option value="3">Alemanha</option>
           </select>
         </div>
-        
+
         <div class="my-3 col-6">
           <label for="form-label" class="text-light">E-mail</label>
-        <input
-          type="email"
-          class="form-control bg-dark"
-          id="email"
-          placeholder="e-mail"
-        />
+          <input type="email" name="email" class="form-control bg-dark text-light" id="email" placeholder="e-mail" />
         </div>
         <div class="my-3 col-3">
           <label for="form-label" class="text-light">Telefone</label>
-          <input
-            type="text"
-            class="form-control bg-dark"
-            id="telefone"
-            placeholder="(00) 1111-1111"
-          />
+          <input type="text" name="telefone" class="form-control bg-dark text-light" id="telefone" placeholder="(00) 1111-1111 " />
         </div>
-          
-  
-          
-                
-         
-  
-          <div class="my-3 col-3">
-            <label for="form-label" class="text-light">Celular</label>
-            <input
-              type="text"
-              class="form-control bg-dark"
-              id="celular"
-              placeholder="(00) 1 1111-1111"
-            />
-          </div>
-          
-      
-          <div class="button">
-            <button  type="submit" class="btn btn-primary" id="enviar">Confirmar</button>
-            <button type="reset" class="btn btn-light " id="cancelar">Cancelar</button>
-          </div>
-      
-       
-         
-      
+
+
+        <div class="my-3 col-3">
+          <label for="form-label" class="text-light">Celular</label>
+          <input type="text" name="celular" class="form-control bg-dark text-light" id="celular" placeholder="(00) 1 1111-1111" />
         </div>
-        </div> <!--fim-->
+
+
+        <div class="button">
+          <button type="submit" name="btn-confimar" class="btn btn-primary btn-" id="enviar">Confirmar</button>
+          <button type="reset" name="btn-confirmar" class="btn btn-light " id="cancelar">Cancelar</button>
+        </div>
+
+
+
+
       </div>
-      
-
-      
-      
-
-     
-              
-       
-
-        
-      
-              
-      
-
-              
-      
-      </form>
     </div>
-  </body>
+    <!--fim-->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </form>
+  </div>
+</body>
+
 </html>
